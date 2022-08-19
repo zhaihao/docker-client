@@ -14,6 +14,14 @@
   <description>A docker client</description>
   <url>https://github.com/spotify/docker-client</url>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub zhaihao Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/zhaihao/docker-client</url>
+    </repository>
+  </distributionManagement>
+
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>

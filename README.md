@@ -5,12 +5,21 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.spotify/docker-client.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.spotify%22%20docker-client)
 [![License](https://img.shields.io/github/license/spotify/docker-client.svg)](LICENSE)
 
+由于 [docker-it-scala](https://github.com/whisklabs/docker-it-scala) 还在使用这个项目，所以继续维护
+
 ## 发布
 发布到本地
 ```bash
-mvn install -X
+docker swarm init
+mvn install
+mvn -DskipTests -Darguments=-DskipTests install
 ```
 
+发布到github
+```bash
+mvn deploy
+mvn -DskipTests -Darguments=-DskipTests deploy
+```
 ## Status: mature
 
 **Spotify no longer uses recent versions of this project internally. The
